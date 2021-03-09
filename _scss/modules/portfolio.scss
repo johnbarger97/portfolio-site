@@ -1,0 +1,113 @@
+
+.portfolio-wrapper{
+
+  //Overlay duotone version on color version.
+  .icon{
+    position: relative;
+    display: flex;
+    align-items: center;
+    //margin: 40px 20px 40px 20px;
+  }
+
+  .duotone{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .color{
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+
+
+
+
+  .icon{
+    display: flex;
+    align-items: center;
+    .color{
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      //border-radius: 100%;
+      transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+      transform-origin: center;
+
+      overflow: hidden; // added for pseudo-element
+      position: relative;
+      object-fit: none;
+      clip-path: circle(0%);
+      opacity: 0;
+      //-webkit-clip-path: inset(20% 20% 20% 20% round 100%);
+      //clip-path: inset(50% 50% 50% 50% round 100%);
+    }
+  }
+
+  .icon:hover{
+
+    .color{
+      opacity: 1;
+      //width: 200px;
+      //height: 200px;
+      //border-radius: 30%;
+      clip-path: circle(40%);
+      //-webkit-clip-path: inset(0% 0% 0% 0% round 20%);
+      //clip-path: inset(20% 10% 20% 10% round 5%);
+    }
+
+  }
+
+  //Contents Grid Areas
+  .c1{grid-area: c1;}
+  .c2{grid-area: c2;}
+  .c3{grid-area: c3;}
+  .c4{grid-area: c4;}
+  .c5{grid-area: c5;}
+  .c6{grid-area: c6;}
+
+  //50% Dektop Contents Layout
+  @media only screen and (max-width: 835px){
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		grid-template-areas:
+		"c1 c2"
+		"c3 c4"
+		"c5 c6";
+    margin-bottom: 100px;
+  }
+
+  //Mobile Contents Layout Tiles
+  @media only screen and (max-width: 550px){
+		display: grid;
+		grid-template-columns: 1fr;
+		align-items: center;
+		grid-template-areas:
+		"c1"
+		"c2"
+		"c3"
+		"c4"
+		"c5"
+		"c6";
+  }
+
+  //100% Dektop Contents Layout
+  @media only screen and (min-width: 835px){
+  		display: grid;
+  		grid-template-columns: 1fr 1fr 1fr;
+  		align-items: center;
+  		grid-template-areas:
+  		"c1 c2 c3"
+  		"c4 c5 c6";
+  }
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang = 'en'>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+		<!--create pipe in between titles if page title is specified-->
+    <title>
+			{{page.title}}
+			{% assign titleCount = page.title | size %}
+			{% if titleCount > 0 %}｜{% endif %}
+			{{site.title}}
+		</title>
+
+
+
+
+    <!--Style-->
+		<link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/style.css">
+		{% if page.dark_mode %}
+			<style media="screen">
+				html{
+					background-color: white;
+					filter: invert(1);
+				}
+
+				.color{
+					filter: invert(1);
+				}
+			</style>
+		{% endif %}
+
+	</head>
+
+
+
+
+	<body>
+		<div class="default-wrapper
+		{% if page.bg == 1 %} bg-1 {% endif %}
+		{% if page.bg == 2 %} bg-2 {% endif %}"
+		style="background-color: {{page.background_color}}">
+
+			<div class="header
+			{% if page.header_shadow %} header--shadow {% endif %}"
+			style="background-color: {{page.header_color}}">
+
+			<div class="menu-wrapper">
+				<div class="menu
+				{% if page.menu_white %}menu--white{% endif %}">
+
+					<div class="left-menu-third">
+						<div class="left-menu">
+							<a href="{{site.url}}/About"><div>Contact</div></a>
+							<span>｜</span>
+							<a href="{{site.url}}/About"><div>About</div></a>
+						</div>
+					</div>
+
+					<a href="{{site.url}}/" class="logo-third">
+						<div>
+							<img class="default" src="{{site.url}}/assets/svg/logo/
+							{% if page.menu_white %}logo_white.svg{% else %}logo.svg{% endif %}"/>
+
+						</div>
+					</a>
+
+					<div class="right-menu-third">
+						<div class="right-menu">
+							<a href="{{site.url}}/projects"><div>Projects</div></a>
+							<span>｜</span>
+							<a href="{{site.url}}/About"><div>Work</div></a>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+
+
+
+			</div>
+
+			<div class="content-wrapper">
+				{{ content }}
+			</div>
+
+			<div class="footer
+			{% if page.portfolio_footer %} footer--portfolio {% endif %}"
+			style="background-color: {{page.footer_color}}">
+				<div class="menu">
+					<a href = "{{site.url}}/About">
+						<div class="logo"><img src="{{site.url}}/assets/svg/logo/combinationmark.svg"/></div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<!--Scripts-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		{% if page.color_hover %}
+			<script src="{{site.url}}/assets/js/ColorHover.js"></script>
+		{% endif %}
+
+	</body>
+
+</html>

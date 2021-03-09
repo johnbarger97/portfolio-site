@@ -1,0 +1,4 @@
+$global-footer-height: 12vh;
+$global-header-height: 10vh;
+//content adjusts based on header and footer size.
+$global-content-height: calc(100vh - (#{$global-header-height} + #{$global-footer-height}));

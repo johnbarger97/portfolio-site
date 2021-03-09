@@ -1,0 +1,11 @@
+- Site structure -
+
+Home Page: List of works
+  - About Page: Introduction, about me.
+  - Projects Page: List of projects, Articles
+  - Work Page: List of Previous Work
+  - Contact Page: How to get in touch
+
+Home Page:
+  About
+  Contact:
