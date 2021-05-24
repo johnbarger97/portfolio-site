@@ -5,16 +5,27 @@ header_shadow: false
 menu_white: true
 bg: 2
 ---
-<div class="about-wrapper">
-	<div class="about">
+
+<style media="screen">
+	button{
+		font-size: 14pt;
+		padding: 10px 20px;
+		margin-right: 20px;
+		border-radius: 20px;
+		border-style: none;
+	}
+</style>
+
+<div class="content-block about">
+	<div class="content">
 		<div class="portrait">
-			<img src="assets/images/me/4.jpg">
+			<img class="portrait-image" src="{{site.baseurl}}/assets/images/me/4.jpg">
 		</div>
-		<div class= "text">
+		<div class="text">
 			<div class="greeting">
-				<img src="/assets/images/pngs/hand_wave.png">
-				<h2>Hi, I'm John</h2>
-			</div>
+				<img class="hand" src="{{site.baseurl}}/assets/images/pngs/hand_wave.png">
+				<h2 class="greeting-title">Hi, I'm John</h2>
+			</div >
 				<p>
 					I'm a web developer with a passion for building empathy-driven tools. I've always been attracted to the overlap between form and function and love finding creative solutions.
 				</p>
@@ -24,9 +35,8 @@ bg: 2
 				<p>
 					After college, me and a friend from school decided to take on a large freelance project together. The project was a communications overhaul for an organization in which he worked on Branding and I worked on Web Design. This project was when I realized that connecting with the user and creating a product that empathized with them is something that I love doing.
 				</p>
-				<p>
-					Ever since realizing that User Experience is what fascinates me above all, I've been wanting to pursue a career in UX.
-				</p>
+
 		</div>
+
 	</div>
 </div>

@@ -1,6 +1,11 @@
 
 .portfolio-wrapper{
 
+  max-width: 1200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
   //Overlay duotone version on color version.
   .icon{
     position: relative;

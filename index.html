@@ -1,53 +1,142 @@
 ---
+title: Building A Website For Cornerstone
 layout: default
-header_shadow: true;
-mountain_bg: true;
-portfolio_footer: true;
+header_shadow: true
+background_color: white
+menu_white: false
+footer_shadow: true
 bg: 1
 ---
-<div class="portfolio-wrapper">
 
-	<a href="Portfolio/Lakewood_Playhouse">
-			<div class="icon c1">
-					<img class="duotone"src="assets/svg/lwph/lwph.svg"/>
-				  <img class="color"src="assets/svg/lwph/lwph_color.svg"/>
-			</div>
-	</a>
+<div class="content-block blog-style">
+  <div class = "content" style="color: black;">
+		<div>
+      <h1>Building a Website for Cornerstone</h1>
+      <br>
+      <br>
+      <br>
+      <p><b>Sector:</b> Religious Organization</p>
+      <hr>
+      <p><b>The Challenge:</b> Provide Cornerstone with a website that works well with their outreach goals and helps them grow their congregation.</p>
+      <hr>
+      <p><b>My Role:</b> Website Development, User Research, Technical Training</p>
+      <hr>
+      <p><b>Project Length: </b>3 Months</p>
 
-	<a href = "Portfolio/LOTH_Preschool">
-		<div class="icon c2">
-      <img class="color" src="assets/svg/loth/loth_color_border.svg"/>
-			<img class="duotone" src="assets/svg/loth/loth.svg"/>
+
+
+
+      <h2>Understanding Cornerstone’s Goals</h2>
+      <p>After consulting leadership members, we learned that their main goals were to grow their congregation and ensure the church's longevity. Rather than providing the church with deliverables that looked purely visually appealing, we wanted to create something that helped them reach these goals.</p>
+
+      <p>My role in this project was to provide the church with a new website. So with these goals in mind, I wanted to develop their new site as a tool for outreach and a resource for current members.</p>
+
+      <p>My role in this project was to provide the church with a new website. So with these goals in mind, I wanted to focus on making their new site a tool for outreach and a resource for current members.</p>
+
+
+
+
+      <h2>UX Research</h2>
+
+      <h3>Competitive Audit</h3>
+      <p>Before deciding anything about content and information architecture, I wanted a solid baseline for how a great church website looks. This way, I could determine the best way to guide the user and prioritize important information.</p>
+      <p>I looked at other church websites to understand the information and features they prioritized. I took notes on what worked well for these sites and what could be improved.</p>
+
+      <video id="vid" autoplay loop muted>
+        <source src="{{site.baseurl}}/assets/cornerstone-project/competitive_audit.mp4" type="video/mp4"/>
+        Your browser does not support HTML Video.
+      </video>
+
+
+      <h3>Information Architecture</h3>
+      <p>It was not too difficult to develop a content outline since Cornerstone Leadership had an idea of what information would be helpful to their congregation. After I talked to them about what features to include to help them with outreach, we decided on the preliminary specifications for the site.</p>
+      <p>Now that I knew what information and page sections to include on the site, I wanted to get feedback from congregation members and determine the best way to organize it. I did this by hosting a UX Workshop after a church service and conducting a card sort.</p>
+
+      <img src="{{site.baseurl}}/assets/cornerstone-project/card_sort_example.jpg" alt="">
+      <p>Members were able to sort information into what they felt were logical categories. This process helped us organize content in a way that is more intuitive for potential users. It was also an opportunity to chat with members about the website and get invaluable qualitative feedback.</p>
+
+      <img src="{{site.baseurl}}/assets/cornerstone-project/information_architecture.png" alt="">
+
+      <h3>Wireframing</h3>
+      <p>The final step before getting into development was to have the client approve a wireframe using the newly generated site structure. I created an initial wireframe that demonstrated interaction and layout. Then I talked to them about the user's navigation of the site and tried to leverage their knowledge about the average church member. After making a few changes, we decided on a final, more intuitive layout.</p>
+
+      <div style="display: flex; width: 100%; justify-content: space-between;">
+        <img style="width: 32%;" src="{{site.baseurl}}/assets/cornerstone-project/wireframe_1.png">
+        <img style="width: 32%;" src="{{site.baseurl}}/assets/cornerstone-project/wireframe_2.png">
+        <img style="width: 32%;" src="{{site.baseurl}}/assets/cornerstone-project/wireframe_3.png">
+      </div>
+
+
+
+
+      <h2>Website Development</h2>
+
+      <h3>Summary (Not Technical)</h3>
+      <p>I created a mockup to demonstrate how the final design would look using my business partner’s brand assets and presented it for the client's approval. After that, it was time for development.</p>
+
+      <p>I began by researching the best tools for the job. After deciding what technology I would use, I spent about five weeks developing the site. After deployment, I updated the site based on user feedback. For instance, I made sure links were easy to click and corrected some behavior issues on specific mobile devices. The final product was responsive, brand consistent, and user-friendly.</p>
+
+
+      <video id="vid" autoplay loop muted>
+        <source src="{{site.baseurl}}/assets/cornerstone-project/site_demo.mp4" type="video/mp4"/>
+        Your browser does not support HTML Video.
+      </video>
+
+
+
+      <video style="margin-left: 0; width: 50%;" id="vid" autoplay loop muted>
+        <source src="{{site.baseurl}}/assets/cornerstone-project/book_interaction.mp4" type="video/mp4"/>
+        Your browser does not support HTML Video.
+      </video>
+
+      <i><hr style="max-width: 50px; margin: 0;">While finishing up, I added extra interactions that enhanced their branding. (The bible is an integral icon of their brand.)</i>
+
+      <h3>Choosing Technologies (Technical)</h3>
+
+      <p>For this project, I decided to use a Headless CMS API. Unlike more common content management tools (such as WordPress), a Headless API completely decouples the front-end from the content. This allows our client to focus on creating without worrying about brand styling and organization. It ensures front-end freedom, making brand customizability more feasible.</p>
+
+      <p>Here is The particular “Headless CMS Stack” that I chose:</p>
+
+      <p> <b>Jekyll: </b> Open source static site generator. (A web templating language like PHP except for generating static content.)</p>
+
+      <p> <b>Netlify CMS: </b>Open-source CMS API. This API provides a front end for our client to manage content.</p>
+
+      <p> <b>Netlify.com: </b>A free tool that builds and deploys the site. (In this case, deploying to Netlify’s servers for hosting—also free.)</p>
+
+      <p> <b>GitHub.com: </b>Backend solution with versioning. (This project’s storage requirements were small enough to fall under the free tier.)</p>
+
+
+      <p>The client inputs content through Netlify CMS, Netlify passes that content to Jekyll, Jekyll builds a static site, and Netlify.com deploys that site to Netflify servers.</p>
+
+
+
+      <h3>Benefits of These Technologies (Not Technical)</h3>
+
+      <p>Here are the benefits of the technology that I chose:</p>
+
+      <p><b>Cost-effective: </b>The technology that I chose was completely free (even hosting)</p>
+
+      <p><b>Simple: </b>My client does not have to worry about maintaining a visual style when creating new pages. All my client has to do is input content, and the system applies brand consistency.</p>
+
+      <p><b>Customizable: </b>The website interface could be customized to suit the brand with virtually no limitations.</p>
+
+      <p><b>Secure: </b>The resulting live website is very secure. It is entirely static, creating a limited attack surface. (The project did not require a dynamic site, just one that could be updated.)</p>
+
+      <h2>Training Leadership</h2>
+
+      <p>At the end of the project, I did whatever I could to help train leadership. Since Cornerstone was a smaller organization new to handling digital outreach, I wanted to be flexible and provide assistance wherever needed. I did not just train them on content management—I used remote desktop software to help them with various social media, including live-streaming their service during the Covid-19 pandemic.</p>
+
+
+      <h2>Conclusion</h2>
+
+      <p>I had to wear many hats to reach our goals. I developed practical solutions to problems with limited resources while accommodating the needs of the congregation. It was all worth the effort because it enabled Cornerstone to connect with their community throughout the Covid-19 pandemic using their site and live-streaming. This process resulted in a clean website and content management system that our client could easily use. We were able to accomplish all of the goals we had laid out for ourselves; the project was a success.</p>
 
 		</div>
-	</a>
-
-	<a href = "Portfolio/33rd_Street_Quartet">
-		<div class="icon c3">
-			<img class="duotone" src="assets/svg/33rd/33rd.svg"/>
-			<img class="color" src="assets/svg/33rd/33rd_color.svg"/>
-		</div>
-	</a>
-
-	<a href = "Portfolio/Icon_Rounded">
-		<div class="icon c4">
-			<img class="duotone" src="assets/svg/icon/icon.svg"/>
-			<img class="color" src="assets/svg/icon/icon_color.svg"/>
-		</div>
-	</a>
-
-	<a href = "Portfolio/Modern_Theater">
-		<div class="icon c5">
-			<img class="duotone" src="assets/svg/modern_theater/modern_theater.svg"/>
-			<img class="color" src="assets/svg/modern_theater/modern_theater_color.svg"/>
-		</div>
-	</a>
-
-	<a href = "Portfolio/Cornerstone">
-		<div class="icon c6">
-			<img class="duotone" src="assets/svg/cornerstone/cornerstone.svg"/>
-			<img class="color" src="assets/svg/cornerstone/cornerstone_color.svg"/>
-		</div>
-	</a>
-
+	</div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
 </div>

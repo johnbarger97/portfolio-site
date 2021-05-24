@@ -1,3 +1,5 @@
 backend:
   name: github
-  branch: master # Branch to update (optional; defaults to master
+  repo: johnbarger97/portfolio-site # Branch to update (optional; defaults to masterß
+
+images: "images/uploads"

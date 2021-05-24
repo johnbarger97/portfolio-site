@@ -10,14 +10,14 @@
 			{{page.title}}
 			{% assign titleCount = page.title | size %}
 			{% if titleCount > 0 %}｜{% endif %}
-			{{site.title}}
+			{{base.title}}
 		</title>
 
 
 
 
     <!--Style-->
-		<link rel="stylesheet" type="text/css" href="{{site.url}}/assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/css/style.css">
 		{% if page.dark_mode %}
 			<style media="screen">
 				html{
@@ -52,15 +52,15 @@
 
 					<div class="left-menu-third">
 						<div class="left-menu">
-							<a href="{{site.url}}/About"><div>Contact</div></a>
+							<a href="{{site.baseurl}}/"><div>Portfolio</div></a>
 							<span>｜</span>
-							<a href="{{site.url}}/About"><div>About</div></a>
+							<a href="{{site.baseurl}}/About"><div>About</div></a>
 						</div>
 					</div>
 
-					<a href="{{site.url}}/" class="logo-third">
+					<a href="{{site.baseurl}}/" class="logo-third">
 						<div>
-							<img class="default" src="{{site.url}}/assets/svg/logo/
+							<img class="default" src="{{site.baseurl}}/assets/svg/logo/
 							{% if page.menu_white %}logo_white.svg{% else %}logo.svg{% endif %}"/>
 
 						</div>
@@ -68,9 +68,9 @@
 
 					<div class="right-menu-third">
 						<div class="right-menu">
-							<a href="{{site.url}}/projects"><div>Projects</div></a>
+							<a href="{{site.baseurl}}/Contact"><div>Contact</div></a>
 							<span>｜</span>
-							<a href="{{site.url}}/About"><div>Work</div></a>
+							<a href="{{site.baseurl}}/Projects"><div>Projects</div></a>
 						</div>
 					</div>
 
@@ -90,8 +90,8 @@
 			{% if page.portfolio_footer %} footer--portfolio {% endif %}"
 			style="background-color: {{page.footer_color}}">
 				<div class="menu">
-					<a href = "{{site.url}}/About">
-						<div class="logo"><img src="{{site.url}}/assets/svg/logo/combinationmark.svg"/></div>
+					<a href = "About">
+						<div class="logo"><img src="{{site.baseurl}}/assets/svg/logo/combinationmark.svg"/></div>
 					</a>
 				</div>
 			</div>
@@ -100,7 +100,7 @@
 		<!--Scripts-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		{% if page.color_hover %}
-			<script src="{{site.url}}/assets/js/ColorHover.js"></script>
+			<script src="{{site.baseurl}}/assets/js/ColorHover.js"></script>
 		{% endif %}
 
 	</body>
