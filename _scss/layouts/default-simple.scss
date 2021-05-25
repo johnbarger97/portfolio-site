@@ -46,6 +46,12 @@ body{
         text-decoration: none;
         border: none;
         padding: none;
+
+        @media only screen and (max-width: 750px){
+          div{display: none;}
+          width: 75px;
+        }
+
         *{
           margin-top: auto;
           margin-bottom: auto;
