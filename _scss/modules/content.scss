@@ -73,9 +73,11 @@
     border-radius: 25px;
   }
 
-  ul{
+  ul li{ list-style-type: disc;}
+  ol li{ list-style-type: decimal;}
+  ul,ol{
     li{
-      list-style-type: disc;
+
       @media only screen and (max-width: 750px){ font-size: 12pt;}
       font-weight: 300;
       font-size: 14pt;
