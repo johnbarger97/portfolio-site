@@ -23,42 +23,42 @@ bg: 1
 
       <h2>“Hold My Hand” - A Mobile Game</h2>
       <br>
-      <p>The Game “Hold My Hand” is an endless runner mobile game that I started with a friend during a game jam. The theme of the game jam was “Stronger Together”. Our Idea was an endless runner where you control Two players and you can hold hands to jump higher.</p>
+      <p>The game, “Hold My Hand” is an endless runner mobile game that I started with a friend during a game jam. The theme of the game jam was “Stronger Together”. Our idea was an endless runner where you maneuver two players through obstacles. What makes them stronger together, is that they can hold hands to jump higher.</p>
 
-      <p>I was really happy with the direction the game was going in, so I decided to add further polish after the jam.</p>
+      <p>After a preliminary version of the game was completed during the jam, I decided to spend an extra two weeks adding polish and fine tuning the gameplay.</p>
 
-      <p>Two weeks later “Hold My Hand” was complete. It was fun to play and I was proud of the finished product.</p>
+      <p>Three weeks after starting this journey, "Hold My Hand" was complete. It is now fun to play and I am proud of the finished product.</p>
 
       <video style="height: 400px; background: black;"id="vid" autoplay loop muted>
         <source src="/assets/hmh-project/gameplay.mp4" type="video/mp4"/>
         Your browser does not support HTML Video.
       </video>
 
-      <p>It took a lot of iterations to get to this point. In this case study, I talk about the evolution of “Hold My Hand” and how I used qualitative user feedback to get it to where it is now.</p>
+      <p>It took a lot of iterations to get to this point. In this case study, I will talk about the evolution of “Hold My Hand” and how I used qualitative user feedback to get it to where it is now.</p>
 
       <h2>Control Scheme Iterations</h2>
       <br>
       <p>Through the process of play testing and creating a smooth player interaction experience, the control scheme of this game went through several iterations.</p>
 
       <h3>First Control Scheme</h3>
-      <p>My very first requirement when designing a control scheme was that it had to be simple. Many mobile games don’t use more than one finger and I wanted my game to have the same convenient appeal.</p>
+      <p>My very first requirement when designing a control scheme was that it needed to be simple. Many mobile games don’t use more than one finger and I wanted my game to have the same convenient appeal.</p>
       <p>Here is the first control scheme:</p>
 
       <p></p>
       <img style="height: 350px; object-fit: cover;" src="assets/hmh-project/control_scheme1.gif" alt="">
       <ul>
-        <li>Swipe down to toggle link.</li>
+        <li>Swipe down to toggle link. (hold hands)</li>
         <li>Swipe up to jump. (Both Players)</li>
         <li>Tap to toggle players to the outer / inner lane.</li>
       </ul>
 
       <p>Out of all the control schemes, this one was the best when it came to usability on account of its simplicity. It was intuitive and easy to learn, but it quickly became clear that this control scheme limited the number of possible position combinations. I immediately recognized that maximizing the variety of positions would lead to a more fun experience, so I set out to do just that.</p>
 
-      <p>To maximize position combonatinos, I wanted to move towards a control scheme that allowed for individual control over the two players.</p>
+      <p>To maximize position combinations, I wanted to move towards a control scheme that allowed for individual control over the two players.</p>
 
       <h3>Second Control Scheme</h3>
 
-      <p>After recognizing that individual control of the two players was important, I began working on a new control scheme. Although this control scheme would have to use 2 fingers, I wanted the controls to remain simple. </p>
+      <p>After recognizing that individual player control was important, I began working on a new control scheme. Although this control scheme would have to use two fingers, I wanted the controls to remain simple. </p>
 
       <p>Here is my solution to this problem:</p>
       <img style="height: 350px; object-fit: cover;"src="assets/hmh-project/control_scheme2.gif" alt="">
@@ -72,6 +72,10 @@ bg: 1
         <li>Move that finger up to jump.</li>
       </ul>
 
+      <p>After I was happy with the implementation of these controls, it was time for play testing. I had friends and family try the game. They had fun with it. It was also easy to learn, but I still noticed some usability issues while people played:</p>
+      <p>1. Fingers were crammed on the screen. In order to get players close to each other the user had to almost touch their fingers together. (I fixed this by remapping finger positions, but it didn’t matter because of the second issue.)</p>
+      <p>2. Keeping your finger on the screen while swiping up to jump felt bad. Users wanted to lift their fingers from the screen (resulting in unintended movement) and the instant feedback of a quick motion (like a swipe) wasn’t there.</p>
+      <p>I tried to fix the problems with this mechanic by remapping finger positions to keep them from bumping each other, but ultimately I couldn’t fix the jump issue so it was time for another control scheme.</p>
       <h3>Final Control Scheme</h3>
 
       <p>After having explored a few iterations, I had a lot of qualitative data from previous playtesting to come up with a good control scheme. Here’s my final solution:</p>
