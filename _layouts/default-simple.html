@@ -5,12 +5,14 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
-		<!--create pipe in between titles if page title is specified-->
+
     <title>
+
 			{{page.title}}
 			{% assign titleCount = page.title | size %}
 			{% if titleCount > 0 %}｜{% endif %}
-			{{base.title}}
+
+			{{site.title}}
 		</title>
 
 
