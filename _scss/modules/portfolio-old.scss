@@ -1,0 +1,111 @@
+.portfolio-old-wrapper{
+
+  //Overlay duotone version on color version.
+  .c1, .c2, .c3, .c4, .c5, .c6{
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .c1_duotone, .c2_duotone, .c3_duotone, .c4_duotone, .c5_duotone, .c6_duotone{
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .c1_color, .c2_color, .c3_color, .c4_color, .c5_color, .c6_color{
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .c1_hover_box, .c2_hover_box, .c3_hover_box, .c4_hover_box, .c5_hover_box, .c6_hover_box{
+    left: 0;
+    right: 0;
+    z-index: 3;
+  }
+
+  //Contents Grid Areas
+  .c1{
+  	grid-area: c1;
+  }
+  .c2{
+  	grid-area: c2;
+  }
+  .c3{
+  	grid-area: c3;
+  }
+  .c4{
+  	grid-area: c4;
+  }
+  .c5{
+  	grid-area: c5;
+  }
+  .c6{
+  	grid-area: c6;
+  }
+
+
+  //50% Dektop Contents Layout
+  @media only screen and (max-width: 835px){
+    margin-bottom: 150px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		grid-template-areas:
+		"c1 c2"
+		"c3 c4"
+		"c5 c6";
+
+  	img{
+  		width: 250px;
+  		display: block;
+      margin-left: auto;
+      margin-right: auto;
+  		padding-top:6vw;
+  		padding-bottom: 6vw;
+  	}
+  }
+
+  //Mobile Contents Layout Tiles
+  @media only screen and (max-width: 550px){
+    margin-bottom: 175px;
+		display: grid;
+		grid-template-columns: 1fr;
+		align-items: center;
+		grid-template-areas:
+		"c1"
+		"c2"
+		"c3"
+		"c4"
+		"c5"
+		"c6";
+  	img{
+  		width: 250px;
+  		display: block;
+      margin-left: auto;
+      margin-right: auto;
+  		padding-top: 40px;
+  	}
+  }
+
+  //100% Dektop Contents Layout
+  @media only screen and (min-width: 835px){
+  		padding-bottom: 150px;
+  		display: grid;
+  		grid-template-columns: 1fr 1fr 1fr;
+  		align-items: center;
+  		grid-template-areas:
+  		"c1 c2 c3"
+  		"c4 c5 c6";
+  	img{
+  		width: 250px;
+  		display: block;
+      margin-left: auto;
+      margin-right: auto;
+  		padding-top:3vw;
+  		padding-bottom: 1vw;
+  	}
+  }
+}
