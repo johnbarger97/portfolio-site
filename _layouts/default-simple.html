@@ -20,29 +20,35 @@
 
     <!--Style-->
 		<link rel="stylesheet" type="text/css" href="{{site.baseurl}}/assets/css/style.css">
+		<style media="screen">
+		.underlined{
+			{% if page.menu_white %}border-color: white;{% endif %}
+		}
 
+		</style>
 	</head>
 
 
 
 
-	<body>
+	<body style="background-color: {{page.background_color}}">
 		<div class="default-simple-wrapper">
-			<div class="nav">
-				<div class="menu">
+			<div class="nav" style="background-color: {{page.header_color}}">
+				<div class="menu" style="{% if page.menu_white %}color: white; border-color: white;{% endif %}">
 					<div class="home">
-						<a href="/"><img src="assets/svg/logo/logo.svg" alt="">
+						<a href="/"><img src="/assets/svg/logo/
+							{% if page.menu_white %}logo_white.svg{% else %}logo.svg{% endif %}" alt="">
 							<div>John Barger</div>
 						</a>
 					</div>
-					<div class="contact">
+					<div class="contact-simple">
 						<div>
-							<a class="icon" href="mailto:johnbarger97@gmail.com"><img src="assets/svg/mail.svg"></a>
-							<a class="text" href="mailto:johnbarger97@gmail.com">johnbarger97@gmail.com</a>
+							<a class="icon" href="mailto:johnbarger97@gmail.com"><img src="/assets/svg/mail.svg"></a>
+							<a class="text underlined" href="mailto:johnbarger97@gmail.com">johnbarger97@gmail.com</a>
 						</div>
 						<div>
-							<a class="icon" href="tel:+12533553718"><img src="assets/svg/phone.svg"></a>
-							<a class="text" href="tel:+12533553718">253 355 3718</a>
+							<a class="icon" href="tel:+12533553718"><img src="/assets/svg/phone.svg"></a>
+							<a class="text underlined" href="tel:+12533553718">253 355 3718</a>
 						</div>
 					</div>
 				</div>

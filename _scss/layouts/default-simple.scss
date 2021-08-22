@@ -62,29 +62,27 @@ body{
       }
       //justify-content: space-around;
     }
-    .contact{
-      width: 350px;
-      @media only screen and (max-width: 750px){width: 150px;}
-      justify-content: space-around;
-      float: right;
-      margin-left: auto;
-      img{
-        width: 25px;
-      }
-      .text{
-        @media only screen and (max-width: 750px){
-          display: none;
-        }
-      }
-      .icon{
+  }
+  .contact-simple{
+    width: 350px;
+    @media only screen and (max-width: 750px){width: 150px;}
+    justify-content: space-around;
+    float: right;
+    margin-left: auto;
+    img{
+      width: 25px;
+    }
+    .text{
+      @media only screen and (max-width: 750px){
         display: none;
-        border: none;
-        @media only screen and (max-width: 750px){
-          display: block;
-        }
       }
     }
-
-
+    .icon{
+      display: none;
+      border: none;
+      @media only screen and (max-width: 750px){
+        display: block;
+      }
+    }
   }
 }

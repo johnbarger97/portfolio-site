@@ -1,0 +1,48 @@
+.site-frame{
+  /*
+  overflow: auto;
+  height: 700px;
+  width: 100%;
+  padding-right: 5px;
+  border-radius: 20px;
+  */
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.24), 0 2px 5px rgba(0, 0, 0, 0.24);
+
+  iframe{
+    width: calc(100% + 20px);
+    height: 100vh;
+    margin-bottom: -7px;
+    margin-right: -20px;
+    //border-radius: 20px;
+    clip-path: inset(0% 20px 0% 0% round 15px);
+  }
+  iframe body{
+    background: red;
+  }
+
+}
+
+/* width */
+.site-frame iframe body::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.site-frame iframe body::-webkit-scrollbar-track {
+  background: none;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  background: black;
+}
+
+/* Handle */
+.site-frame iframe body::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #49D6B1;
+}
+
+/* Handle on hover */
+.site-frame iframe body::-webkit-scrollbar-thumb:hover {
+
+}

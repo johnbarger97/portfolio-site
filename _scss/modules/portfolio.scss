@@ -1,6 +1,6 @@
 
 .portfolio-wrapper{
-  max-width: 1200px;
+  max-width: 800px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -10,6 +10,8 @@
     position: relative;
     display: flex;
     align-items: center;
+    transform: scale(120%);
+    padding: 20px;
     //margin: 40px 20px 40px 20px;
   }
 
@@ -21,6 +23,7 @@
     left: 0;
     right: 0;
     z-index: 1;
+
   }
 
   .color{
@@ -39,19 +42,17 @@
     .color{
       display: flex;
       align-items: center;
-      overflow: hidden;
+      //overflow: hidden;
       display: block;
       margin-left: auto;
       margin-right: auto;
       //border-radius: 100%;
       transition: all 0.5s cubic-bezier(.25,.8,.25,1);
-      transform-origin: center;
-
-      overflow: hidden; // added for pseudo-element
+      //transform-origin: center;
+      //overflow: hidden; // added for pseudo-element
       position: relative;
-      object-fit: none;
       clip-path: circle(0%);
-      opacity: 0;
+      opacity: 1;
       //-webkit-clip-path: inset(20% 20% 20% 20% round 100%);
       //clip-path: inset(50% 50% 50% 50% round 100%);
     }
@@ -86,8 +87,7 @@
 		align-items: center;
 		grid-template-areas:
 		"c1 c2"
-		"c3 c4"
-		"c5 c6";
+		"c3 c4";
     margin-bottom: 100px;
   }
 
@@ -100,18 +100,19 @@
 		"c1"
 		"c2"
 		"c3"
-		"c4"
-		"c5"
-		"c6";
+		"c4";
   }
 
   //100% Dektop Contents Layout
   @media only screen and (min-width: 835px){
   		display: grid;
-  		grid-template-columns: 1fr 1fr 1fr;
+  		grid-template-columns: 1fr 1fr;
   		align-items: center;
-  		grid-template-areas:
+  		/*grid-template-areas:
   		"c1 c2 c3"
-  		"c4 c5 c6";
+  		"c4 c5 c6";*/
+      grid-template-areas:
+  		"c1 c2"
+  		"c3 c4";
   }
 }
